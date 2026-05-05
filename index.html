@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Text Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI Text Summarizer</h1>
+    
+    <form action="/summarize" method="post">
+        <textarea name="text" placeholder="Enter your text here..." required></textarea>
+        <button type="submit">Summarize</button>
+    </form>
+</div>
+
+</body>
+</html>
